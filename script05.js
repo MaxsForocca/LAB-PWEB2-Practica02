@@ -3,7 +3,7 @@ function crearTablas(){
     const divT = document.getElementById("tablas");
     for(let i = 0; i < cant; i++){
         let input = document.createElement("input");
-        input.id = "tabla"+i;
+        input.id = "tablaNumero";
         input.type = "number";
         input.value = 0;
         divT.appendChild(input);
@@ -12,14 +12,15 @@ function crearTablas(){
     var BSum = document.createElement("button");
     BSum.id = "botonSumar";
     BSum.textContent = "sumar";
-    BSum.onclick = "sumar()";
+    BSum.onclick = sumar;
     divT.appendChild(BSum);     
 }
 function sumar(){
-    console.log("la funcion de sumar de inicio");
-    var sum = 0;
-    for(let i = 0; i < cant; i++){
-        sum = sum + document.getElementById("tabla"+i).value;
+    const divT = document.getElementById("tablas");
+    var numeros = document.querySelectorAll("#tablaNumero");
+    sum = 0;
+    for(let i =0 ; i < numeros.length; i++){
+        sum += parseInt(numeros[i].value);
     }
     divT.appendChild(document.createElement("br"));
     const rpta = document.createElement("p");
