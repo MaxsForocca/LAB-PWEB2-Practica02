@@ -92,14 +92,15 @@
 
 ## CUESTIONARIO
 - Pruebe este código de arrayGenerator() en la página https://jslint.com/
+    -![jslintPrueba](jslintPrueba.png) 
 - Revisar esta discusión en stackoverflow - https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-in-javascript
   - ¿Cómo se pueden resolver los warnings?
+    - Haciendo uso de los corchetes o tambien con mapas.
   - ¿Se puede modificar la solución usando map? ¿Cómo?
-  
+    - Si, para crear el arreglo con una cantidad determinada de valores definidos e indefinidos y estos se puedan iterar, Array.apply(null, Array(n)).map(function () {})
 
 #
 
 ## REFERENCIAS
-- links
 
 #
