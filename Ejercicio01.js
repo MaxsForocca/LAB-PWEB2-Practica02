@@ -1,4 +1,3 @@
-var day = new Date().getDay();
 function NameDay(d){
     if(d == 0)
         return "Domingo";
@@ -15,4 +14,7 @@ function NameDay(d){
     else
         return "Sabado";
 }
-console.log(NameDay(day));
+function imprimirDia(){
+    var day = new Date().getDay();
+    document.getElementById("rpta").innerHTML = "Hoy es :"+ NameDay(day);
+}
