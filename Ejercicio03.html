@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Ejercicio 03</h1>
-    <h3>Los dias que faltan para el dia de Arequipa es: <h3 id="respuesta"></h3></h3>
+    <h3 id="respuesta"></h3>
     <script>
 	function arequipaDay() {
     	var hoy = new Date();
@@ -19,7 +19,7 @@
     	var rpta = Math.round(miliTime/day);
     	return rpta;
 	}
-	document.getElementById("respuesta").innerHTML = arequipaDay();
+	document.getElementById("respuesta").innerHTML = "Los dias que faltan para el dia de arequipa es: "+arequipaDay();
     </script>
 </body>
 </html>
